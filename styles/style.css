@@ -1,0 +1,24 @@
+div.loading {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  object-fit: scale-dow;
+  object-position: cente;
+
+  background-color: #e3f4fd;
+}
+div.loading img.loading__gif {
+  transform: translate(50vw, 50vh) translate(-50%, -50%);
+}
+
+img {
+  height:400px;
+  width: 600px;
+}
+
+#title-header {
+  color: rgb(35, 192, 227)
+}
