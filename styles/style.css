@@ -124,10 +124,10 @@ text-decoration: none;
 	width: 100vw;
 	text-align: left;
 	font: normal 16px sans-serif;
+	
+	padding: 45px 50px;
+	margin-top: 80px;
 }
-
-	/*padding: 45px 50px;*/
-	/*margin-top: 80px;*/
 
 
 .footer .footer__left p{
