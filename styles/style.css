@@ -107,9 +107,42 @@ text-decoration: none;
 }
 
 .content{
-	/*margin-top: 150px;*/
-	margin-bottom: 1000px;
+	width: 100vw;
 }
+
+.main{
+	background: linear-gradient(#F7FE2E, #A9BCF5);
+	padding-top: 160px;
+}
+
+.main__wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; 
+}
+
+.main__project-name{
+	padding-top: 100px;
+	color: white;
+}
+
+.main__title{
+	font-size: 100px;
+	font-family: sans-serif;
+	color: white;
+	padding-bottom: 100px;
+}
+
+.main__subtitle{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 50px;
+	color: white;
+	font-size: 25px;
+	font-weight: 400;
+}
+
 
 /*@media (max-width: 698px) {*/
 /*.content{*/
