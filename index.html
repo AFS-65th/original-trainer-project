@@ -19,17 +19,29 @@
 <header class="header">
 	<div class="header__title hvr-glow">
 		<h1>
-	    		<a href="./index.html" >
-	    			<img src="./img/AFS-logo.png" class="header__title__logo">
-	       		</a>
-	    		<span class="header__title__title">AFS 65th Eternal Ties Project</span>
-	    	</h1>
+    		<a href="./index.html" >
+    			<img src="./img/AFS-logo.png" class="header__title__logo">
+       		</a>
+    		<span class="header__title__title">AFS 65th Eternal Ties Project</span>
+    	</h1>
     </div>
 	<ul class="header__navbar">
 		<li><a href="" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
 		<li><a href="" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
-		<li><a href="" class="header__navbar--item hvr-sweep-to-right">コンタクト</a></li>
+		<li><a href="" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
 	</ul>
+	<div class="mobile-menu">
+		<input id="menu-cb" type="checkbox" value="off">
+		<label id="menu-icon" for="menu-cb">≡</label>
+		<label id="menu-background" for="menu-cb"></label>
+		<div id="ham-menu">
+	    	<ul class="header__navbar--mobile">
+	        	<li class="header__navbar--item hvr-sweep-to-right">ホーム</li>
+	        	<li class="header__navbar--item hvr-sweep-to-right">インフォメーション</li>
+	        	<li class="header__navbar--item hvr-sweep-to-right">メンバー紹介</li>
+	   		</ul>
+		</div>
+	</div>
 </header>
 <!--<div class="content">-->
 <!--		<div class="main">-->
@@ -78,42 +90,59 @@
 	<div class="main">
 		
 		<section class="page1">
-	    	<div class="page_container">
-				<div class="main__wrap__page1 main__wrap__pages">
-					<!--ここフォント変更-->
-					<!--<h3 class="main__project-name">Eternal Ties Design Contest</h3>-->
-					<!--↑こいついるか？つけるとしたらもうちょいやり方を考えよ-->
+	    	<div class="page_container page1__content">
+				<!--<h3 class="main__project-name">Eternal Ties Design Contest</h3>-->
+				<!--↑こいついるか？つけるとしたらもうちょいやり方を考えよ-->
 					<h1 class="main__title">デザイン案募集中!!</h1>
 					<p class="main__subtitle">65期のみんなが着れる、トレーナーを作りませんか？現在デザインを大募集中です！</p>
 					<p class="main__subtitle">詳しくは下のページをチェック！</p>
-				</div>
 	    	</div>
 		</section>
 
 		<section class="page2">
-	    	<div class="page_container">
-				<div class="main__wrap__page2 main__wrap__pages">
-					<p>
-						<h2>Eternal Ties Design Contest開催中！</h2>
-						皆さんから65期生限定オリジナルトレーナーのデザインを募集します！
-					</p>
-				</div>
+	    	<div class="page_container page2__content">
+				<p>
+					<h2>Eternal Ties Design Contest開催中！</h2>
+					皆さんから65期生限定オリジナルトレーナーのデザインを募集します！
+				</p>
 			</div>
 		</section>
 	
 		<section class="page3">
-			<div class="page_container">
-	  			<div class="main__wrap__page3 main__wrap__pages">
-					<p>
-						<h2>メンバー紹介</h>
-					</p>
-				</div>
+			<div class="page_container page3__content">
+				<p>
+					<h2 class="page3__title">メンバー紹介</h2>
+					<div class="page3__members">
+						<div class="page3__members__ken">
+							<img class="face" src="./img/trainer_temp.png"></img>
+							<p class="name">Ken</p>
+						</div>
+
+						<div class="page3__members__non">
+							<img class="face" src="./img/trainer_temp.png"></img>
+							<p class="name">のん</p>
+						</div>
+						<div class="page3__members__oji">
+							<img class="face" src="./img/trainer_temp.png"></img>
+							<p class="name">OJI</p>
+						</div>
+						<div class="page3__members__iroha">
+							<img class="face" src="./img/trainer_temp.png"></img>
+							<p class="name">168</p>
+						</div>
+						<div class="page3__members__coreshin">
+							<img class="face" src="./img/trainer_temp.png"></img>
+							<p class="name">Coreshin</p>
+						</div>
+
+					</div>
+				</p>
 	    	</div>
 	  	</section>
 	  	
 	</div>
 </div>
-
+<div class="foo"></div>
 
 
 <!--<footer class="footer">-->
@@ -137,7 +166,24 @@
 <!--</footer>-->
 <script type="text/javascript" src="./scripts/onepagescroll.min.js"></script>
 <script type="text/javascript">
-	onePageScroll(".main"); 
+	onePageScroll(".main");
+	const header = document.getElementsByClassName("header");
+
+	onePageScroll(".main", {
+    beforeMove: function(index, next_el) {
+    	if (index == 1) {
+    		header[0].classList.add("transpalent");
+    	} else {
+    		header[0].classList.remove("transpalent");
+    	}
+    	hoge(index);
+    }
+  });
+  
+  function hoge(index) {
+  	console.log( "index = " + index);
+  }
+
 </script>
 </body>
 </html>
