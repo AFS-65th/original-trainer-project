@@ -9,6 +9,7 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+.wf-kokoro { font-family: "Kokoro"; }
 
 .pagetop {
 	display: inline;
@@ -64,7 +65,7 @@ text-decoration: none;
 
 
 .header {
-	background-color: rgba(255,255,255,0.0);
+	background-color: rgba(255,255,255,1.0);
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -204,21 +205,22 @@ text-decoration: none;
 .page2__content {
 	background-color: rgba(255, 255, 255, 0.4);
 	height: 100vh;
-	padding-top: 180px;
+	padding-top: 100px;
   text-align: center;
 }
 
 .page3__content {
 	background-color: rgba(255, 255, 255, 0.4);
 	height: 100vh;
-	padding-top: 180px;
+	padding-top: 100px;
   text-align: center;
 }
 
 .page4__content{
 	background-color: rgba(255, 255, 255, 0.4);
 	height: 100%;
-	padding-top: 180px;
+	width: 100%;
+	padding-top: 100px;
   text-align: center;
 }
 
@@ -229,28 +231,50 @@ text-decoration: none;
   background-color: rgba(81,81,81, 0.8);
 }
 
-.page4__title {
-  margin: 36px;
+.face {
+  width: 100%;
+  padding: 12px;
+  opacity: 0.8;
+} 
+
+.member {
+  width: 15%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.member:hover {
+  transition: linear .2s;
+	background-color: rgba(255, 228, 196, 0.8);
 }
 
 .page4__members {
-  padding: 24px;
-  
+  height: 100%;
+  width: 100%;
+}
+
+.page4__members__man {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  justify-content: center;
+}
+.page4__members__woman {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.face {
-  height: 270px;
-  width: 270px;
-  
-  opacity: 0.8;
-} 
+.member {
+  padding: 24px;
+}
 
 
 .main__project-name{
@@ -274,86 +298,3 @@ text-decoration: none;
 	font-size: 25px;
 	font-weight: 400;
 }
-
-
-/*@media (max-width: 698px) {*/
-/*.content{*/
-/*	margin-top: 300px;*/
-/*	margin-bottom: 1000px;*/
-/*}}*/
-
-/*.footer{*/
-/*	background-color: #292c2f;*/
-/*	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);*/
-/*	box-sizing: border-box;*/
-/*	width: 100vw;*/
-/*	text-align: left;*/
-/*	font: normal 16px sans-serif;*/
-	
-/*	padding: 45px 50px;*/
-/*	margin-top: 80px;*/
-/*}*/
-
-
-/*.footer .footer__left p{*/
-/*	color:  #8f9296;*/
-/*	font-size: 14px;*/
-/*	margin: 0;*/
-/*}*/
-
- /*Footer links */
-
-/*.footer p.footer__links{*/
-/*	font-size:18px;*/
-/*	font-weight: bold;*/
-/*	color:  #ffffff;*/
-/*	margin: 0 0 10px;*/
-/*	padding: 0;*/
-/*}*/
-
-/*.footer p.footer__links a{*/
-/*	display:inline-block;*/
-/*	line-height: 1.8;*/
-/*	text-decoration: none;*/
-/*	color:  inherit;*/
-/*}*/
-
-/*.footer .footer__right{*/
-/*	float: right;*/
-/*	margin-top: 6px;*/
-/*	max-width: 180px;*/
-/*}*/
-
-/*.footer .footer__right a{*/
-/*	display: inline-block;*/
-/*	width: 35px;*/
-/*	height: 35px;*/
-/*	background-color:  #33383b;*/
-/*	border-radius: 2px;*/
-
-/*	font-size: 20px;*/
-/*	color: #ffffff;*/
-/*	text-align: center;*/
-/*	line-height: 35px;*/
-
-/*	margin-left: 3px;*/
-/*}*/
-
- /*If you don't want the footer to be responsive, remove these media queries */
-
-/*@media (max-width: 1000px) {*/
-
-/*	.footer .footer__left,*/
-/*	.footer .footer__right{*/
-/*		text-align: center;*/
-/*	}*/
-
-/*	.footer .footer__right{*/
-/*		float: none;*/
-/*		margin: 0 auto 20px;*/
-/*	}*/
-
-/*	.footer .footer__left p.footer__links{*/
-/*		line-height: 1.8;*/
-/*	}*/
-/*}*/

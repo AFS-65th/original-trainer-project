@@ -3,20 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>AFS65th Eternal Ties Projects</title>
+    
     <link href="./styles/style.css" type="text/css" rel="stylesheet"/>
 	<link href="./styles/hover.css" type="text/css" rel="stylesheet"/>
     <link href="./styles/arrow.css" type="text/css" rel="stylesheet"/>
+    <link href="./styles/modal.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
+    
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='./styles/onepage-scroll.css' rel='stylesheet' type='text/css'>
     <meta name="description" content="オリジナルトレーナー作成委員会のページです。現在開発中...">
-	
 </head>
-<body>
+<body class="wf-kokoro">
 <!--<div class="loading">-->
 <!--    <img class="loading__gif" src="./img/loading.gif" />-->
 <!--</div>-->
-<header class="header">
+<header class="header transpalent">
 	<div class="header__title hvr-glow">
 		<h1>
     		<a href="./index.html" >
@@ -42,56 +45,11 @@
 		</div>
 	</div>
 </header>
-<!--<div class="content">-->
-<!--		<div class="main">-->
-<!--			<div class="main__wrap">-->
-<!--				<section class="page1">-->
-					<!--<div class="main__wrap__page1 main__wrap__pages">-->
-					<!--		ここフォント変更-->
-					<!--		<h3 class="main__project-name">Eternal Ties Design Contest</h3>-->
-					<!--		↑こいついるか？つけるとしたらもうちょいやり方を考えよ-->
-					<!--		<h1 class="main__title">デザイン案募集中!!</h1>-->
-					<!--		<p class="main__subtitle">65期のみんなが着れる、トレーナーを作りませんか？現在デザインを大募集中です！</p>-->
-					<!--		<p class="main__subtitle">詳しくは下のページをチェック！</p>-->
-					<!--</div>-->
-<!--				</section>-->
-				
-<!--				<section class="page2">-->
-<!--					<div class="main__wrap__page2 main__wrap__pages">-->
-<!--						<p>-->
-<!--							<h2>Eternal Ties Design Contest開催中！</h2>-->
-<!--							皆さんから65期生限定オリジナルトレーナーのデザインを募集します！-->
-<!--						</p>-->
-<!--					</div>-->
-<!--				</section>-->
-				
-<!--				<section class"page3">-->
-<!--					<div class="main__wrap__page3 main__wrap__pages">-->
-<!--						<p>-->
-<!--							<h2>Eternal Ties Projectとは？</h>-->
-<!--						</p>-->
-<!--					</div>-->
-<!--				</section>-->
-				
-<!--				<section>-->
-<!--					<div class="main__wrap__page3 main__wrap__pages">-->
-<!--						<p>-->
-<!--							<h2>メンバー紹介</h>-->
-<!--						</p>-->
-<!--					</div>-->
-<!--				</section>-->
-				
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
 
 <div class="wrapper">
 	<div class="main">
-		
 		<section class="page1">
 	    	<div class="page_container page1__content">
-				<!--<h3 class="main__project-name">Eternal Ties Design Contest</h3>-->
-				<!--↑こいついるか？つけるとしたらもうちょいやり方を考えよ-->
 					<h1 class="main__title">デザイン案募集中!!</h1>
 					<p class="main__subtitle">65期のみんなが着れる、トレーナーを作りませんか？現在デザインを大募集中です！</p>
 					<p class="main__subtitle">詳しくは下のページをチェック！</p>
@@ -119,55 +77,77 @@
 		<section class="page4">
 			<div class="page_container page4__content">
 				<!--<div class="hidden"></div>-->
-				<p>
+				<!--<p>-->
 					<h2 class="page4__title">メンバー紹介</h2>
 					<div class="page4__members">
-						<div class="page4__members__ken hvr-glow">
-							<img class="face" src="./img/members/ken.png"></img>
-							<p class="name">Ken</p>
-						</div>
-						<div class="page4__members__non hvr-glow">
-							<img class="face" src="./img/members/non.png"></img>
-							<p class="name">のん</p>
-						</div>
-						<div class="page4__members__oji hvr-glow">
-							<img class="face" src="./img/members/oji.png"></img>
-							<p class="name">OJI</p>
-						</div>
-						<div class="page4__members__iroha hvr-glow">
-							<img class="face" src="./img/members/iroha.png"></img>
-							<p class="name">168</p>
-						</div>
-						<div class="page4__members__coreshin hvr-glow">
-							<img class="face" src="./img/members/coreshin.png"></img>
-							<p class="name">Coreshin</p>
+						<div class="page4__members__women">
+							<div class="page4__members__non hvr-glow member">
+								<img class="face" src="./img/members/non.png"></img>
+								<p class="job">Assistant Manager</p>
+								<p class="name">のん</p>
+							</div>
+							<div class="page4__members__iroha hvr-glow member">
+								<img class="face" src="./img/members/iroha.png"></img>
+								<p class="job">Assistant Manager</p>
+								<p class="name">168</p>
+							</div>
+						<div class="page4__members__man">
+							<div class="page4__members__ken hvr-glow member">
+								<img class="face" src="./img/members/ken.png"></img>
+								<p class="job">Coordinator Liaison</p>
+								<p class="name">Ken</p>
+							</div>
+							<div class="page4__members__oji hvr-glow member">
+								<img class="face" src="./img/members/oji.png"></img>
+								<p class="job">Manager</p>
+								<p class="name">OJI</p>
+							</div>
+							<div class="page4__members__coreshin hvr-glow modal member">
+								<div class="modal">
+									<input id="modal-trigger" class="checkbox" type="checkbox">
+								  	<div class="modal-overlay">
+									    <label for="modal-trigger" class="o-close"></label>
+									    <div class="modal-wrap">
+											<label for="modal-trigger" class="close">&#10006;</label>
+											<h2>CORESHIN</h2>
+											<p>
+												65期フィンランド派遣の加藤芯です。
+												趣味は読書と海でのヨット。少々のwebプログラミング
+												今回のプロジェクトでは、おもにwebデザインを行っています。
+												興味がある方は、ぜひともご応募ください！
+											</p>
+										</div>
+									</div>
+								</div>
+								<!--<input type="checkbox" class="checkbox" id="modal-trigger" />-->
+								<label for="modal-trigger"><img class="face" src="./img/members/coreshin.png"></img><i class="icon-question-circle"></i></label>
+								<!--<input type="radio" name="modalPop" id="pop12" />-->
+								<!--<label for="pop12">CLOSE</label>-->
+								<!--<input type="radio" name="modalPop" id="pop13" />-->
+								<!--<label for="pop13">×</label>-->
+								<!--<div class="modalPopup2">-->
+								<!--	<div class="modalPopup3">-->
+								<!--		<h2 class="modalTitle">CORESHIN</h2>-->
+								<!--		<div class="modalMain">-->
+								<!--		</div>-->
+								<!--	</div>-->
+								<p class="job">Development Manager</p>
+								<p class="name">Coreshin</p>
+
+								</div>
+							</div>
 						</div>
 					</div>
-				</p>
+				</div>
+				<!--</p>-->
 	    	</div>
 	  	</section>
 	</div>
 </div>
 <div class="foo"></div>
-<div class="pagetop" onClick="moveTo('.main', )">
+<div class="pagetop" onClick="moveTo('.main', 1)">
 	<h5><p>↑</p><p>ページトップ</p></h5>
 </div>
-<!--<footer class="footer">-->
-<!--	<div class="footer__right">-->
-<!--	    <a href="" class="hvr-grow"><i class="fa fa-twitter"></i></a>-->
-<!--		<a href="https://github.com/AFS-65th/original-trainer-project" class="hvr-grow"><i class="fa fa-github"></i></a>-->
-<!--	</div>-->
-<!--	<div class="footer__left">-->
-<!--		<p class="footer__links">-->
-<!--			<a href="./index.html" class="hvr-float">Home</a>-->
-<!--				·-->
-<!--			<a href="#" class="hvr-float">Info</a>-->
-<!--				·-->
-<!--			<a href="#" class="hvr-float">Contact</a>-->
-<!--		</p>-->
-<!--		<p>OJI coreshin &copy; 2017</p>-->
-<!--	</div>-->
-<!--</footer>-->
 <script type="text/javascript" src="./scripts/onepagescroll.min.js"></script>
 <script type="text/javascript">
 	onePageScroll(".main");
@@ -177,10 +157,11 @@
     beforeMove: function(index, next_el) {
     	if (index == 1) {
     		header[0].classList.add("transpalent");
+    		console.log("Add transpalent");
     	} else {
     		header[0].classList.remove("transpalent");
+    		console.log("transpalent");
     	}
-    	hoge(index);
     }
   });
   
