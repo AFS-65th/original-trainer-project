@@ -236,6 +236,7 @@ text-decoration: none;
   width: 100%;
   padding: 12px;
   opacity: 0.8;
+  cursor: pointer;
 } 
 
 .member {
@@ -298,4 +299,8 @@ text-decoration: none;
 	color: white;
 	font-size: 25px;
 	font-weight: 400;
+}
+
+.modal__name {
+  text-align: center;
 }
