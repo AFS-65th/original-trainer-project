@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>AFS65th Eternal Ties Projects</title>
     
-    <link href="./styles/style.css" type="text/css" rel="stylesheet"/>
-	<link href="./styles/hover.css" type="text/css" rel="stylesheet"/>
-    <link href="./styles/arrow.css" type="text/css" rel="stylesheet"/>
-    <link href="./styles/modal.css" type="text/css" rel="stylesheet"/>
+    <link href="./styles/header.css" type="text/css" rel="stylesheet"/>
+    <link href="./styles/style.css"  type="text/css" rel="stylesheet"/>
+	<link href="./styles/hover.css"  type="text/css" rel="stylesheet"/>
+    <link href="./styles/arrow.css"  type="text/css" rel="stylesheet"/>
+    <link href="./styles/modal.css"  type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="./img/favicon.ico">
@@ -34,7 +35,7 @@
     </div>
 	<ul class="header__navbar">
 		<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
-		<li><a href="#" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
+		<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
 		<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
 	</ul>
 	<div class="mobile-menu">
@@ -42,9 +43,9 @@
 		<label id="menu-icon" for="menu-cb">≡</label>
 		<div id="ham-menu">
 	    	<ul class="header__navbar--mobile">
-	        	<li class="header__navbar--item hvr-sweep-to-right">ホーム</li>
-	        	<li class="header__navbar--item hvr-sweep-to-right">インフォメーション</li>
-	        	<li class="header__navbar--item hvr-sweep-to-right">メンバー紹介</li>
+					<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
+					<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
+					<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
 	   		</ul>
 		</div>
 	</div>
@@ -197,22 +198,23 @@
 
 
 
-<!--<div class="foo"></div>-->
+<div class="foo"></div>
 <div class="pagetop" onClick="moveTo('.main', 1)">
 	<h5><p>↑</p><p>ページトップ</p></h5>
 </div>
 <script type="text/javascript" src="./scripts/onepagescroll.min.js"></script>
 <script type="text/javascript">
-	const header = document.getElementsByClassName("header");
+	const $header = document.getElementsByClassName("header")[0];
+	const $arrow  = document.getElementsByClassName("foo")[0] 
 
 	onePageScroll(".main", {
     beforeMove: function(index, next_el) {
     	if (index == 1) {
-    		header[0].classList.add("transpalent");
-    		console.log("Add transpalent");
+    		$header.classList.add("transpalent");
+    		$arrow.classList.remove("none");
     	} else {
-    		header[0].classList.remove("transpalent");
-    		console.log("transpalent");
+    		$header.classList.remove("transpalent");
+    		$arrow.classList.add("none")
     	}
     }
   });
