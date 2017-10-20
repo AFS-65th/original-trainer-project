@@ -21,7 +21,7 @@ body{
 	transition-duration:.35s;
 	transition-timing-function:ease-in-out;
   position: fixed;
-  z-index: 30;
+  z-index: 10;
   bottom: 70px;
   right: 80px;
   width: 80px;
@@ -52,7 +52,8 @@ text-decoration: none;
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 2147483647;
+  
   -moz-object-fit: scale-dow;
   -moz-object-position: cente;
 
@@ -63,6 +64,11 @@ text-decoration: none;
   transform: translate(50vw, 50vh) translate(-50%, -50%);
 }
 
+.loading-remove {
+  transition: all .5s;
+  display: none;
+}
+
 
 .header {
 	background-color: rgba(255,255,255,1.0);
@@ -71,7 +77,7 @@ text-decoration: none;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-	z-index: 40;
+	z-index: 20;
 	position: fixed;
 	top:0;
 	left:0;
@@ -223,13 +229,6 @@ text-decoration: none;
 	width: 100%;
 	padding-top: 100px;
   text-align: center;
-}
-
-.hidden {
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(81,81,81, 0.8);
 }
 
 .face {

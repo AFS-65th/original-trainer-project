@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='./styles/onepage-scroll.css' rel='stylesheet' type='text/css'>
     <meta name="description" content="オリジナルトレーナー作成委員会のページです。現在開発中...">
+    <script type="text/javascript" src="./scripts/loading.js"></script>
 </head>
 <body class="wf-kokoro">
-<!--<div class="loading">-->
-<!--    <img class="loading__gif" src="./img/loading.gif" />-->
-<!--</div>-->
+	
+<div class="loading">
+    <img class="loading__gif" src="./img/loading.gif" />
+</div>
+
+
 <header class="header transpalent">
 	<div class="header__title hvr-glow">
 		<h1>
@@ -29,9 +33,9 @@
     	</h1>
     </div>
 	<ul class="header__navbar">
-		<li><a href="" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
-		<li><a href="" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
-		<li><a href="" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
+		<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
+		<li><a href="#" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
+		<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
 	</ul>
 	<div class="mobile-menu">
 		<input id="menu-cb" type="checkbox" value="off">
@@ -76,8 +80,6 @@
 		
 		<section class="page4">
 			<div class="page_container page4__content">
-				<!--<div class="hidden"></div>-->
-				<!--<p>-->
 					<h2 class="page4__title">メンバー紹介</h2>
 					<div class="page4__members">
 						<div class="page4__members__women">
@@ -104,16 +106,6 @@
 							</div>
 							<div class="page4__members__coreshin hvr-glow modal member">
 								<label for="modal-trigger-coreshin"><img class="face" src="./img/members/coreshin.png"></img><i class="icon-question-circle"></i></label>
-								<!--<input type="radio" name="modalPop" id="pop12" />-->
-								<!--<label for="pop12">CLOSE</label>-->
-								<!--<input type="radio" name="modalPop" id="pop13" />-->
-								<!--<label for="pop13">×</label>-->
-								<!--<div class="modalPopup2">-->
-								<!--	<div class="modalPopup3">-->
-								<!--		<h2 class="modalTitle">CORESHIN</h2>-->
-								<!--		<div class="modalMain">-->
-								<!--		</div>-->
-								<!--	</div>-->
 								<p class="job">Development Manager</p>
 								<p class="name">Coreshin</p>
 
@@ -122,7 +114,6 @@
 						</div>
 					</div>
 				</div>
-				<!--</p>-->
 	    	</div>
 	  	</section>
 	</div>
@@ -168,7 +159,9 @@
 			<label for="modal-trigger-non" class="close">&#10006;</label>
 			<h2 class="modal__name">のん</h2>
 			<p>
-				<!--内容-->
+				65期スペイン派遣ののんです。<br>
+				体動かすのが好きな元気いっぱいの中3です！<br>
+				映画見るのが大好きです！<br>
 			</p>
 		</div>
 	</div>
@@ -181,7 +174,8 @@
 			<label for="modal-trigger-iroha" class="close">&#10006;</label>
 			<h2 class="modal__name">168</h2>
 			<p>
-				<!--内容-->
+				65期フランス派遣の168です。<br>
+				スケート、読書、映画鑑賞など、とにかく多趣味です。<br>
 			</p>
 		</div>
 	</div>
@@ -194,7 +188,8 @@
 			<label for="modal-trigger-ken" class="close">&#10006;</label>
 			<h2 class="modal__name">Ken</h2>
 			<p>
-				<!--内容-->
+				65期フランス派遣のKenです。<br>
+				趣味はギターで、音楽大好きです！
 			</p>
 		</div>
 	</div>
