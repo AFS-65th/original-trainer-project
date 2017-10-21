@@ -5,10 +5,12 @@
     <title>AFS65th Eternal Ties Projects</title>
     
     <link href="./styles/header.css" type="text/css" rel="stylesheet"/>
-    <link href="./styles/style.css"  type="text/css" rel="stylesheet"/>
+    <link href="./styles/style-index.css"  type="text/css" rel="stylesheet"/>
 	<link href="./styles/hover.css"  type="text/css" rel="stylesheet"/>
     <link href="./styles/arrow.css"  type="text/css" rel="stylesheet"/>
     <link href="./styles/modal.css"  type="text/css" rel="stylesheet"/>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="./img/favicon.ico">
@@ -18,6 +20,7 @@
     <script type="text/javascript" src="./scripts/loading.js"></script>
 </head>
 <body class="wf-kokoro">
+	
 	
 <div class="loading">
     <img class="loading__gif" src="./img/loading.gif" />
@@ -35,17 +38,17 @@
     </div>
 	<ul class="header__navbar">
 		<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
-		<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
 		<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
+		<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
 	</ul>
 	<div class="mobile-menu">
 		<input id="menu-cb" type="checkbox" value="off">
 		<label id="menu-icon" for="menu-cb">≡</label>
 		<div id="ham-menu">
 	    	<ul class="header__navbar--mobile">
-					<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
-					<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
-					<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
+				<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
+				<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
+				<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
 	   		</ul>
 		</div>
 	</div>
@@ -80,46 +83,70 @@
 		</section>
 		
 		<section class="page4">
-			<div class="page_container page4__content">
-					<h2 class="page4__title">メンバー紹介</h2>
-					<div class="page4__members">
-						<div class="page4__members__women">
-							<div class="page4__members__non hvr-glow member">
-								<label for="modal-trigger-non"><img class="face" src="./img/members/non.png"></img><i class="icon-question-circle"></i></img></label>
-								<p class="job">Assistant Manager</p>
-								<p class="name">のん</p>
-							</div>
-							<div class="page4__members__iroha hvr-glow member">
-								<label for="modal-trigger-iroha"><img class="face" src="./img/members/iroha.png"></img><i class="icon-question-circle"></i></img></label>
-								<p class="job">Assistant Manager</p>
-								<p class="name">168</p>
-							</div>
-						<div class="page4__members__man">
-							<div class="page4__members__ken hvr-glow member">
-								<label for="modal-trigger-ken"><img class="face" src="./img/members/ken.png"></img><i class="icon-question-circle"></i></img></label>
-								<p class="job">Coordinator Liaison</p>
-								<p class="name">Ken</p>
-							</div>
-							<div class="page4__members__oji hvr-glow member">
-								<label for="modal-trigger-oji"><img class="face" src="./img/members/oji.png"><i class="icon-question-circle"></i></img></label>
-								<p class="job">Manager</p>
-								<p class="name">OJI</p>
-							</div>
-							<div class="page4__members__coreshin hvr-glow modal member">
-								<label for="modal-trigger-coreshin"><img class="face" src="./img/members/coreshin.png"></img><i class="icon-question-circle"></i></label>
-								<p class="job">Development Manager</p>
-								<p class="name">Coreshin</p>
-
+			<div class="page_container page4__content wf-kokoro">
+					<h2 class="page4__title"><span class="swiper-button-prev"></span>メンバー紹介<span class="swiper-button-next"></span></h2>
+					 <!--Slider main container -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+						
+							<div class="swiper-slide"> 
+								<!-- Slide-01　コンテンツを挿入する -->
+								<div class="page4__members__non hvr-glow member">
+									<label for="modal-trigger-non"><img class="face" src="./img/members/non.png"></img><i class="icon-question-circle"></i></img></label>
+									<p class="job">Assistant Manager</p>
+									<p class="name">のん</p>
 								</div>
 							</div>
+						
+							<div class="swiper-slide">
+								<!-- Slide-02　コンテンツを挿入する -->
+								<div class="page4__members__iroha hvr-glow member">
+									<label for="modal-trigger-iroha"><img class="face" src="./img/members/iroha.png"></img><i class="icon-question-circle"></i></img></label>
+									<p class="job">Assistant Manager</p>
+									<p class="name">168</p>
+								</div>
+							</div>
+						
+							<div class="swiper-slide"> 
+								<!-- Slide-03 コンテンツを挿入する -->
+								<div class="page4__members__ken hvr-glow member">
+									<label for="modal-trigger-ken"><img class="face" src="./img/members/ken.png"></img><i class="icon-question-circle"></i></img></label>
+									<p class="job">Coordinator Liaison</p>
+									<p class="name">Ken</p>
+								</div>
+							</div>
+						
+							<div class="swiper-slide"> 
+								<!-- Slide-04 コンテンツを挿入する -->
+								<div class="page4__members__oji hvr-glow member">
+									<label for="modal-trigger-oji"><img class="face" src="./img/members/oji.png"><i class="icon-question-circle"></i></img></label>
+									<p class="job">Manager</p>
+									<p class="name">OJI</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide"> 
+								<!-- Slide-05 コンテンツを挿入する -->
+								<div class="page4__members__coreshin hvr-glow modal member">
+									<label for="modal-trigger-coreshin"><img class="face" src="./img/members/coreshin.png"></img><i class="icon-question-circle"></i></label>
+									<p class="job">Development Manager</p>
+									<p class="name">Coreshin</p>
+								</div>
+							</div>
+							
 						</div>
+					
+						<div class="swiper-pagination"></div>
+						<div class="swiper-scrollbar"></div>
+					
 					</div>
-				</div>
-	    	</div>
+			</div>
 	  	</section>
 	</div>
 </div>
 
+
+<!--modal-window contents-->
 <div class="modal">
 	<input id="modal-trigger-coreshin" class="checkbox" type="checkbox">
   	<div class="modal-overlay">
@@ -197,32 +224,43 @@
 </div>
 
 
-
+<!--hover contents-->
 <div class="foo"></div>
 <div class="pagetop" onClick="moveTo('.main', 1)">
 	<h5><p>↑</p><p>ページトップ</p></h5>
 </div>
-<script type="text/javascript" src="./scripts/onepagescroll.min.js"></script>
-<script type="text/javascript">
-	const $header = document.getElementsByClassName("header")[0];
-	const $arrow  = document.getElementsByClassName("foo")[0] 
 
-	onePageScroll(".main", {
-    beforeMove: function(index, next_el) {
-    	if (index == 1) {
-    		$header.classList.add("transpalent");
-    		$arrow.classList.remove("none");
-    	} else {
-    		$header.classList.remove("transpalent");
-    		$arrow.classList.add("none")
-    	}
-    }
+
+<!--scripts-->
+<script type="text/javascript" src="./scripts/onepagescroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script type="text/javascript">
+	const swiper = new Swiper ('.swiper-container', {
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // Controll with Keybord
+    keyboard: {
+        enabled: true,
+      },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
   });
-  
+
   function hoge(index) {
   	console.log( "index = " + index);
   }
-
+  
 </script>
 </body>
 </html>
