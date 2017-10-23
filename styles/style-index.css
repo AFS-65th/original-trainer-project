@@ -155,6 +155,21 @@ text-decoration: none;
   padding: 24px;
 }
 
+.page4__link{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  color:black;
+  transition-property: color;
+	transition-duration:.25s;
+	transition-timing-function:ease-in-out;
+}
+
+.page4__link:hover{
+  color:white;
+}
 
 .main__project-name{
 	padding-top: 100px;
