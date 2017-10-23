@@ -13,18 +13,31 @@
 	max-height: 100px;
 	justify-content: flex-end;
 	align-items: center;
+    box-shadow:0px 0px 6px 3px rgba(0,0,0,0.15);
 }
 
-.transpalent {
-    /*border-bottom-style: solid;*/
-    /*border-bottom-width: 1px;*/
-    /*border-bottom-color: white;*/
+.absolute{
+    position: static;
+}
+
+.transparent {
+    box-shadow: none;
     background: none;
 }
 
-.transpalent a {
+.transparent a {
     color: white;
     border-left-color: white;
+}
+
+.transparent .header__navbar--item--mobile{
+    color: black;
+    border-left-color: black;
+}
+
+.transparent #menu-icon{
+    background: none;
+    color: white;
 }
 
 .header__title {
@@ -36,14 +49,15 @@
 .header__title__logo {
 	height: 80px;
 	position: relative;
+	top: 10px;
 }
 
 .header__title__title {
-    font-family: fantasy;
+    font-family: 'Russo One', sans-serif;
     color: rgb(35, 192, 227);
-    padding-left: 16px;
-    padding: 0px;
-    top: 0px;
+    position: relative;
+    bottom: 20px;
+    
 }
 
 .header__navbar{
@@ -54,7 +68,7 @@
 	display: inline-block;
  }
  
- .header__mavbar--mobile{
+ .header__navbar--mobile{
     margin-top: 30px;
 	margin-right: 24px;
 	list-style: none;
@@ -68,12 +82,12 @@
     vertical-align: middle;
 }
 
-.header__navbar--item {
+.header__navbar--item, .header__navbar--item--mobile {
   font-family: serif;
   position: relative;
   display: inline-block; 
   padding: 18px 20px 18px;
-  color: #000;
+  color: black;
   font-weight: bold;
   border-left-width: 1px;
   border-left-color: black;
@@ -120,6 +134,18 @@
 
 #menu-cb {
     display: none; /*チェックボックス本体は消しておく*/
+}
+
+#menu-icon:after{
+    font-size: 10px;
+     position: absolute;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  content: 'MENU';
+  transition: all 500ms ease-in-out;
+  visibility: visible;
+  opacity: 1;
 }
 
 #menu-cb:checked ~ #ham-menu,

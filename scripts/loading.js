@@ -7,17 +7,17 @@ window.onload = function() {
 	onePageScroll(".main", {
     beforeMove: function(index, next_el) {
     	if (index == 1) {
-    		$header.classList.add("transpalent");
+    		$header.classList.add("transparent");
     		$arrow.classList.remove("none");
     	} else {
-    		$header.classList.remove("transpalent");
+    		$header.classList.remove("transparent");
     		$arrow.classList.add("none");
     		const $pagination = document.getElementsByClassName("onepage-pagination")[0];
     		if (index == 4) {
-    // 			$pagination.classList.add("transpalent");
+    // 			$pagination.classList.add("transparent");
                 $pagination.style.zIndex = -1;
     		} else {
-    // 			$pagination.classList.remove("transpalent");
+    // 			$pagination.classList.remove("transparent");
                 $pagination.style.zIndex = 5;
     		}
     	}

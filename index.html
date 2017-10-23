@@ -10,16 +10,16 @@
     <link href="./styles/arrow.css"  type="text/css" rel="stylesheet"/>
     <link href="./styles/modal.css"  type="text/css" rel="stylesheet"/>
     
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href='./styles/onepage-scroll.css' rel='stylesheet' type='text/css'>
     <meta name="description" content="オリジナルトレーナー作成委員会のページです。現在開発中...">
     <script type="text/javascript" src="./scripts/loading.js"></script>
 </head>
-<body class="wf-kokoro">
+<body class="wf-roundedmplus1c">
 	
 	
 <div class="loading">
@@ -27,17 +27,19 @@
 </div>
 
 
-<header class="header transpalent">
+<header class="header transparent">
 	<div class="header__title hvr-glow">
 		<h1>
     		<a href="./index.html" >
     			<img src="./img/AFS-logo.png" class="header__title__logo">
-       		</a>
-    		<span class="header__title__title">AFS 65th Eternal Ties Project</span>
+       		
+    		<span class="header__title__title wf-title">AFS 65th Eternal Ties Project</span>
+    		</a>
     	</h1>
     </div>
 	<ul class="header__navbar">
 		<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
+		<li><a href="#" onClick="moveTo('.main', 3)" class="header__navbar--item hvr-sweep-to-right">Eternal Ties Projectとは？</a></li>
 		<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
 		<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
 	</ul>
@@ -46,9 +48,10 @@
 		<label id="menu-icon" for="menu-cb">≡</label>
 		<div id="ham-menu">
 	    	<ul class="header__navbar--mobile">
-				<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item hvr-sweep-to-right">ホーム</a></li>
-				<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item hvr-sweep-to-right">メンバー紹介</a></li>
-				<li><a href="./info.html" class="header__navbar--item hvr-sweep-to-right">インフォメーション</a></li>
+				<li><a href="#" onClick="moveTo('.main', 1)" class="header__navbar--item--mobile hvr-sweep-to-right">ホーム</a></li>
+				<li><a href="#" onClick="moveTo('.main', 3)" class="header__navbar--item--mobile hvr-sweep-to-right">Eternal Ties Projectとは？</a></li>
+				<li><a href="#" onClick="moveTo('.main', 4)" class="header__navbar--item--mobile hvr-sweep-to-right">メンバー紹介</a></li>
+				<li><a href="./info.html" class="header__navbar--item--mobile hvr-sweep-to-right">インフォメーション</a></li>
 	   		</ul>
 		</div>
 	</div>
@@ -59,8 +62,8 @@
 		<section class="page1">
 	    	<div class="page_container page1__content">
 				<h1 class="main__title">デザイン案募集中!!</h1>
-				<p class="main__subtitle">65期のみんなが着れる、トレーナーを作りませんか？現在デザインを大募集中です！</p>
-				<p class="main__subtitle">詳しくは下のページをチェック！</p>
+				<p class="main__subtitle"><span class="highlight">65期のみんなが着れる、トレーナーを作りませんか？現在デザインを大募集中です！</span></p>
+				<p class="main__subtitle"><span class="highlight">詳しくは下のページをチェック！</span></p>
 	    	</div>
 		</section>
 

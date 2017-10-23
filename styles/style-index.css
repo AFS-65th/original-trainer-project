@@ -9,7 +9,17 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+.highlight {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.5) 0%);
+    line-height: 1.3em;
+}
+
 .wf-kokoro { font-family: "Kokoro"; }
+.wf-title {
+  font-family: 'Russo One', sans-serif;
+  /*font-family: ""; */
+}
+
 
 .pagetop {
 	display: inline;
@@ -127,6 +137,7 @@ text-decoration: none;
   width: 200px;
   height:250px;
   cursor: pointer;
+  margin: auto;
 }
 
 .member:hover {
