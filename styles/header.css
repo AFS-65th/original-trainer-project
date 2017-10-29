@@ -43,7 +43,8 @@
 .header__title {
 	margin-right: auto;
 	display: flex;
-	white-space: nowrap
+	white-space: nowrap;
+	cursor: pointer;
 }
 
 .header__title__logo {

@@ -1,7 +1,7 @@
 body{
   background: url("../img/home.jpg");
   background-size: cover;
-	padding: 0;
+  padding: 0;
   position: relative;
   margin: 0;
   height: 100vh;
@@ -26,29 +26,6 @@ a {text-decoration: none;}
   font-family: serif;
   font-size: 40px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-}
-
-.main__title small{
-  font-size: 20px;
-  text-shadow: none;
-  font-weight: lighter;
-}
-
-.main__infomations {
-  display: grid;
-  width: 100%;
-  grid-auto-rows: 240px;
-  grid-template-columns: repeat(auto-fit, 200px);
-  justify-content: start;
-  padding: 16px;
-}
-
-.info {
-  background-color: #02f6c2;
-  font-size: 18px;
-  padding: 30px;
-  margin: 10px;
-  text-align: center;
 }
 
 footer {
