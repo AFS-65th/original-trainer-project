@@ -47,12 +47,11 @@ a {text-decoration: none;}
 .main__content {
   font-size: 18px;
   padding: 24px;
-  width: 100%;
 }
 
 p {
   width: 100%;
-  padding: 24px;
+  padding: 16px;
 } 
 
 footer {

@@ -16,7 +16,8 @@ window.onload = function() {
     		if (index == 4) {
     // 			$pagination.classList.add("transparent");
                 $pagination.style.zIndex = -1;
-    		} else {
+    		}
+    		else {
     // 			$pagination.classList.remove("transparent");
                 $pagination.style.zIndex = 5;
     		}

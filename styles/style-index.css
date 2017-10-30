@@ -13,7 +13,7 @@
 
 
 body{
-  background: url("../img/home.jpg");
+  background: url("../img/home.jpg") no-repeat center;
   background-size: cover;
 	padding: 0;
   position: relative;
@@ -49,8 +49,9 @@ body{
   cursor: pointer;
 }
 
-.pagetop h5{
-	font-size: 11px;
+.pagetop i{
+  margin:10px 10px 12px;
+	font-size: 60px;
 }
 
 .pagetop:hover {
@@ -110,11 +111,11 @@ text-decoration: none;
 }
 
 .main__title{
-	font-size: 120px;
+  width:100%;
+	font-size: 6em;
 	font-family: sans-serif;
 	font-weight: bold;
 	color: white;
-	padding-bottom: 50px;
 	letter-spacing: -0.05em;
 }
 
@@ -123,13 +124,18 @@ text-decoration: none;
   margin-right: 100px;
   padding-bottom: 50px;
   color: white;
-  letter-spacing: 1px;
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: 900;
 }
 
+@media (max-width: 900px) {
+  .main__title { font-size: 5em; }
+  .main__subtitle{ font-size: 1.2em;}
+}
+
 .page2__content {
-	background-color: rgba(255, 255, 255, 0.4);
+  background-color: #FCF751;
+	/*background-color: rgba(255, 255, 255, 0.4);*/
 	height: 100vh;
 	padding-top: 100px;
 	padding-bottom: 30px;
@@ -153,25 +159,36 @@ text-decoration: none;
 
 
 .page3__content {
+  background: url(../img/AFS-logo.png) no-repeat left top;
   background-color: #00779E;
-	/*background-color: rgba(255, 255, 255, 0.4);*/
+  background-blend-mode: multiply;
 	height: 100vh;
 	padding-top: 100px;
   text-align: center;
   color: white;
 }
 
-.page3__content p{
-  margin-left:;
-  margin-right: ;
+.page3__content__text {
+  padding-top:  10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: start;
+  text-indent:20px ;
 }
 
 .page4__content{
-	background-color: rgb(200, 200, 200);
+  color:white;
+	background: rgba(0,0,0,0.8) url(https://cdn.pixabay.com/photo/2016/12/20/21/25/construction-1921518_960_720.jpg) no-repeat center center;
+	background-blend-mode:multiply;
+	background-size: cover;
 	height: 100%;
 	width: 100%;
 	padding-top: 100px;
   text-align: center;
+}
+
+.page4__content h2{
+  margin-top:100px;
 }
 
 .swiper-container {
