@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+
 .header {
     background-color: rgba(255,255,255,1.0);
     display: -webkit-flex;
@@ -14,6 +16,10 @@
 	justify-content: flex-end;
 	align-items: center;
     box-shadow:0px 0px 6px 3px rgba(0,0,0,0.15);
+}
+
+.wf-title {
+  font-family: 'Russo One', sans-serif;
 }
 
 .absolute{
@@ -140,14 +146,14 @@
 
 #menu-icon:after{
     font-size: 10px;
-     position: absolute;
-  width: 100%;
-  top: 15px;
-  left: 0;
-  content: 'MENU';
-  transition: all 500ms ease-in-out;
-  visibility: visible;
-  opacity: 1;
+    position: absolute;
+    width: 100%;
+    top: 2.5em;
+    left: 0;
+    content: 'MENU';
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+    opacity: 1;
 }
 
 #menu-cb:checked ~ #ham-menu,

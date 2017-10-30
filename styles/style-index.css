@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/earlyaccess/hannari.css);
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+@import url(fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url(fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/kokoro.css);
+
+
+.wf-kokoro { font-family: "Kokoro"; }
+.wf-hannari { font-family: "Hannari"; }
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.wf-sawarabigothic { font-family: "Sawarabi Gothic"; }
+
+
+
 body{
   background: url("../img/home.jpg");
   background-size: cover;
@@ -12,12 +26,6 @@ body{
 .highlight {
     background: linear-gradient(transparent 50%, rgba(0,0,0,0.5) 0%);
     line-height: 1.3em;
-}
-
-.wf-kokoro { font-family: "Kokoro"; }
-.wf-title {
-  font-family: 'Russo One', sans-serif;
-  /*font-family: ""; */
 }
 
 
@@ -95,6 +103,31 @@ text-decoration: none;
   text-align: center;
 }
 
+.main__project-name{
+	padding-top: 100px;
+	padding-left: 120px;
+	color: white;
+}
+
+.main__title{
+	font-size: 120px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	padding-bottom: 50px;
+	letter-spacing: -0.05em;
+}
+
+.main__subtitle{
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 50px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
 .page2__content {
 	background-color: rgba(255, 255, 255, 0.4);
 	height: 100vh;
@@ -103,6 +136,22 @@ text-decoration: none;
   text-align: center;
 }
 
+.page2__btn__link{
+	display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #25708b;
+  border: solid 2px #25708b;
+  border-radius: 3px;
+  transition: .25s;
+}
+
+.page2__btn__link:hover{
+  background: #25708b;
+  color:white;
+}
+
+
 .page3__content {
   background-color: #00779E;
 	/*background-color: rgba(255, 255, 255, 0.4);*/
@@ -110,6 +159,11 @@ text-decoration: none;
 	padding-top: 100px;
   text-align: center;
   color: white;
+}
+
+.page3__content p{
+  margin-left:;
+  margin-right: ;
 }
 
 .page4__content{
@@ -134,8 +188,9 @@ text-decoration: none;
 } 
 
 .member {
-  width: 200px;
-  height:250px;
+  padding: 24px;
+  width: 300px;
+  height:400px;
   cursor: pointer;
   margin: auto;
 }
@@ -145,52 +200,29 @@ text-decoration: none;
 	background-color: rgba(255, 228, 196, 0.8);
 }
 
+.member__trigger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+  
+  cursor: pointer;
+}
+
+.member__job {
+  cursor: pointer;
+}
+
+.member__name {
+  cursor: pointer;
+}
+
 .page4__members {
   margin-top: 48px;
   height: 80%;
   width: 100vw;
-}
-
-.member {
-  padding: 24px;
-}
-
-.page4__link{
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  color:black;
-  transition-property: color;
-	transition-duration:.25s;
-	transition-timing-function:ease-in-out;
-}
-
-.page4__link:hover{
-  color:white;
-}
-
-.main__project-name{
-	padding-top: 100px;
-	padding-left: 120px;
-	color: white;
-}
-
-.main__title{
-	font-size: 100px;
-	font-family: sans-serif;
-	color: white;
-	padding-bottom: 50px;
-}
-
-.main__subtitle{
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 50px;
-	color: white;
-	font-size: 25px;
-	font-weight: 400;
 }
 
 .modal__name {

@@ -2,11 +2,19 @@ body{
   background: url("../img/home.jpg");
   background-size: cover;
   padding: 0;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
   margin: 0;
   height: 100vh;
   width: 100vw;
   -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .wf-kokoro { font-family: "Kokoro"; }
@@ -14,10 +22,12 @@ body{
 a {text-decoration: none;}
 
 .main__container {
-  padding-left: 36px;
-  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  padding: 16px;
   height: 100%;
-  width: 100%;
+  width: 70%;
   background-color: white;
   z-index: 2;
 }
@@ -28,8 +38,23 @@ a {text-decoration: none;}
   text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
+.main__title__date {
+  padding-right: 50px;
+  position: absolute;
+  right: 100;
+}
+
+.main__content {
+  font-size: 18px;
+  padding: 24px;
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  padding: 24px;
+} 
+
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
