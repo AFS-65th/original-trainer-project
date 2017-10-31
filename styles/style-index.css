@@ -50,8 +50,7 @@ body{
 }
 
 .pagetop i{
-  margin:10px 10px 12px;
-	font-size: 60px;
+  	font-size: 60px;
 }
 
 .pagetop:hover {
@@ -104,12 +103,6 @@ text-decoration: none;
   text-align: center;
 }
 
-.main__project-name{
-	padding-top: 100px;
-	padding-left: 120px;
-	color: white;
-}
-
 .main__title{
   width:100%;
 	font-size: 6em;
@@ -134,7 +127,9 @@ text-decoration: none;
 }
 
 .page2__content {
-  background-color: #FCF751;
+  background: #DCE35B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	/*background-color: rgba(255, 255, 255, 0.4);*/
 	height: 100vh;
 	padding-top: 100px;
@@ -159,8 +154,7 @@ text-decoration: none;
 
 
 .page3__content {
-  background: url(../img/AFS-logo.png) no-repeat left top;
-  background-color: #00779E;
+  background: #00779E url(../img/AFS-logo.png) no-repeat left top;
   background-blend-mode: multiply;
 	height: 100vh;
 	padding-top: 100px;
@@ -169,11 +163,12 @@ text-decoration: none;
 }
 
 .page3__content__text {
-  padding-top:  10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: start;
-  text-indent:20px ;
+  max-width: 700px;
+  padding-top: 10px;
+  margin-right:auto;
+  margin-left:auto;
+  text-align: left;
+  text-indent: 1em ;
 }
 
 .page4__content{
@@ -193,13 +188,12 @@ text-decoration: none;
 
 .swiper-container {
 	height: 100%;
-	width: 100%;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .face {
   width: 100%;
-  padding: 12px;
+  /*padding: 12px;*/
   opacity: 0.8;
   cursor: pointer;
 } 
@@ -215,6 +209,7 @@ text-decoration: none;
 .member:hover {
   transition: linear .2s;
 	background-color: rgba(255, 228, 196, 0.8);
+	border-radius: 10%;
 }
 
 .member__trigger {
