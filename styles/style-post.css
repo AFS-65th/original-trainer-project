@@ -1,34 +1,36 @@
+@import url(https://fonts.googleapis.com/earlyaccess/hannari.css);
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+@import url(fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url(fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/kokoro.css);
+
+
+.wf-kokoro { font-family: "Kokoro"; }
+.wf-hannari { font-family: "Hannari"; }
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.wf-sawarabigothic { font-family: "Sawarabi Gothic"; }
+
 body{
-  background: url("../img/home.jpg");
+  background: url("../img/home.jpg") no-repeat center;
   background-size: cover;
-  padding: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
+  background-attachment:fixed;
+	padding: 0;
   margin: 0;
+  position: relative;
   height: 100vh;
   width: 100vw;
   -webkit-font-smoothing: antialiased;
 }
 
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-
-.wf-kokoro { font-family: "Kokoro"; }
-
 a {text-decoration: none;}
 
 .main__container {
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   margin-top: 90px;
   padding: 16px;
-  height: 100%;
   width: 70%;
-  background-color: white;
   z-index: 2;
 }
 

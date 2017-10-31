@@ -23,7 +23,8 @@
 }
 
 .absolute{
-    position: static;
+    top:0;
+    position: absolute;
 }
 
 .transparent {
@@ -47,6 +48,7 @@
 }
 
 .header__title {
+    max-height: 100px;
 	margin-right: auto;
 	display: flex;
 	white-space: nowrap;
@@ -56,7 +58,6 @@
 .header__title__logo {
 	height: 80px;
 	position: relative;
-	top: 10px;
 }
 
 .header__title__title {
@@ -64,8 +65,7 @@
     font-family: 'Russo One', sans-serif;
     color: rgb(35, 192, 227);
     position: relative;
-    bottom: 20px;
-    
+    bottom: 30px;
 }
 
 .header__navbar{
@@ -100,12 +100,20 @@
   border-left-width: 1px;
   border-left-color: black;
   border-left-style: solid;
-  
 }
 
 @media (max-width: 1000px) {
-.header__navbar {
-  display: none;
+.header__navbar {display: none;}
+.header__title{
+    margin: 0 auto;
+}    
+}
+@media(max-width: 1180px) and (min-width: 1000px){
+.header__navbar--item{
+    font-size: 11px;
+}
+.header__title__title{
+    font-size: 20px;
 }
 }
 

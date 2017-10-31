@@ -1,25 +1,39 @@
+@import url(https://fonts.googleapis.com/earlyaccess/hannari.css);
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+@import url(fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url(fonts.googleapis.com/earlyaccess/sawarabigothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/kokoro.css);
+
+
+.wf-kokoro { font-family: "Kokoro"; }
+.wf-hannari { font-family: "Hannari"; }
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.wf-sawarabigothic { font-family: "Sawarabi Gothic"; }
+
 body{
-  background: url("../img/home.jpg");
+  background: url("https://cdn.pixabay.com/photo/2014/05/21/22/28/old-newspaper-350376_960_720.jpg") no-repeat center;
   background-size: cover;
+  background-attachment:fixed; 
 	padding: 0;
+	margin: 0;
   position: relative;
-  margin: 0;
   height: 100vh;
   width: 100vw;
   -webkit-font-smoothing: antialiased;
 }
 
-.wf-kokoro { font-family: "Kokoro"; }
-
 a {text-decoration: none;}
 
 .main__container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 36px;
-  padding-top: 40px;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  z-index: 2;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  width: 70%;
+  z-index: 0;
 }
 
 .main__title{
@@ -41,10 +55,11 @@ a {text-decoration: none;}
   grid-template-columns: repeat(auto-fit, 280px);
   justify-content: start;
   padding: 16px;
+  margin: 0 auto;
 }
 
 .info {
-  border: 5px solid gray;
+  border: 1px solid gray;
   border-radius: 10px;
   font-size: 18px;
   padding: 30px;
