@@ -99,48 +99,79 @@ text-decoration: none;
 }
 
 .page1__content{
-  margin-top: 100px;
   text-align: center;
 }
 
+.page1__content:before{
+  background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.8));
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .main__title{
-  width:100%;
-	font-size: 6em;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:5em;
+	font-size: 20vh;
 	font-family: sans-serif;
 	font-weight: bold;
 	color: white;
 	letter-spacing: -0.05em;
+	line-height: 0.9em;
 }
 
 .main__subtitle{
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-bottom: 50px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック";
   color: white;
+  font-weight: 100;
   font-size: 1.5em;
   font-weight: 900;
+  line-height:1.5em;
 }
 
-@media (max-width: 900px) {
-  .main__title { font-size: 5em; }
-  .main__subtitle{ font-size: 1.2em;}
+@media (max-width: 1000px) {
+body {
+  background-image: url("../img/home_phone.jpg");
+  background-size: cover;
+}
+.main__title {
+    font-size: 11vh;
+}
 }
 
 .page2__content {
-  background: #DCE35B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	/*background-color: rgba(255, 255, 255, 0.4);*/
-	height: 100vh;
-	padding-top: 100px;
-	padding-bottom: 30px;
+  background: linear-gradient(to left, rgba(69, 182, 73, .96), #FFFF00);
+  height: 100vh;
+	padding-top: 30vh;
   text-align: center;
+}
+
+.page2__content h1{
+  font-size: 5vh;
+}
+
+.page2__content h2{
+  font-size: 2vh;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .page2__btn__link{
 	display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
+  font-size: 1.5em;
   color: #25708b;
   border: solid 2px #25708b;
   border-radius: 3px;
@@ -156,60 +187,96 @@ text-decoration: none;
 .page3__content {
   background: #00779E url(../img/AFS-logo.png) no-repeat left top;
   background-blend-mode: multiply;
+  background-size: cover;
 	height: 100vh;
-	padding-top: 100px;
+	padding-top: 15vh;
   text-align: center;
   color: white;
 }
 
 .page3__content__text {
+  font-size: 2vh;
   max-width: 700px;
   padding-top: 10px;
+  padding: 10px 30px 0px 30px;
   margin-right:auto;
   margin-left:auto;
   text-align: left;
   text-indent: 1em ;
 }
 
-.page4__content{
-  color:white;
-	background: rgba(0,0,0,0.8) url(https://cdn.pixabay.com/photo/2016/12/20/21/25/construction-1921518_960_720.jpg) no-repeat center center;
-	background-blend-mode:multiply;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-	padding-top: 100px;
+.page3__content__text h2{
+  text-align: center;
+  text-indent: 0;
+  white-space: nowrap;
+}
+
+.page3__content__text__name{
   text-align: center;
 }
 
-.page4__content h2{
-  margin-top:100px;
+/*.page3__content__blend{*/
+/*  mix-blend-mode: soft-light;*/
+/*  font-size: 100px;*/
+/*  font-family: sans-serif;*/
+/*  font-weight: bold;*/
+/*  line-height: 1.4;*/
+/*  top: 10%;*/
+/*  left: 10%;*/
+/*  position: absolute;*/
+/*  white-space: nowrap;*/
+/*}*/
+
+.page4__content{
+  color:white;
+  /*background: linear-gradient(-135deg, #77a1d3, #79cbca, #ff0000);*/
+  /*background: linear-gradient(to right, #283048, #859398); */
+  background: linear-gradient(45deg, rgb(246, 255, 0), rgba(255, 0, 161, .8));
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding-top: 15vh;
+  text-align: center;
+}
+
+.page4__content__blend{
+  mix-blend-mode: soft-light;
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
+  bottom: 0;
+  right: 10%;
+  line-height: 1.4;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.page4__title{
+  font-size: 3vh;
 }
 
 .swiper-container {
-	height: 100%;
-  /*text-align: center;*/
+	height: 100vh;
+  text-align: center;
+  align-items: center;
 }
 
 .face {
-  width: 100%;
-  /*padding: 12px;*/
+  width: 30vh;
   opacity: 0.8;
   cursor: pointer;
 } 
 
 .member {
   padding: 24px;
-  width: 300px;
-  height:400px;
+  text-align: center;
   cursor: pointer;
-  margin: auto;
 }
 
 .member:hover {
   transition: linear .2s;
 	background-color: rgba(255, 228, 196, 0.8);
-	border-radius: 10%;
+	border-radius: 10px;
 }
 
 .member__trigger {
@@ -225,10 +292,12 @@ text-decoration: none;
 
 .member__job {
   cursor: pointer;
+  font-size: 3.5vh;
 }
 
 .member__name {
   cursor: pointer;
+  font-size: 3vh;
 }
 
 .page4__members {

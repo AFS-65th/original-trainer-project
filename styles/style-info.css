@@ -11,7 +11,7 @@
 .wf-sawarabigothic { font-family: "Sawarabi Gothic"; }
 
 body{
-  background: url("https://cdn.pixabay.com/photo/2014/05/21/22/28/old-newspaper-350376_960_720.jpg") no-repeat center;
+  background: url("../img/home.jpg") no-repeat center;
   background-size: cover;
   background-attachment:fixed; 
 	padding: 0;
@@ -20,6 +20,9 @@ body{
   height: 100vh;
   width: 100vw;
   -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 1000px) {
+  body {background-image: url("../img/home_phone.jpg");}
 }
 
 a {text-decoration: none;}

@@ -1,0 +1,47 @@
+.test{
+    background: url(../img/stripes.png);
+}
+
+.test p{
+    font-size: 10px;
+    letter-spacing: 0em;
+    font-family: serif;
+    line-height: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.test h2{
+    position: fixed;
+    left: 35%;
+    bottom: 55%;
+    font-size: 100px;
+    font-family: Gothic;
+    font-weight: bold;
+    color: white;
+    margin: -10px;
+    z-index: 3;
+}
+
+.test h3{
+    position: fixed;
+    margin: -10px;
+    left: 47%;
+    bottom: 50%;
+    color: black;
+    font-size: 70px;
+    font-family: serif;
+    text-align: center;
+}
+
+.test h1{
+    position: fixed;
+    font-size: 100px;
+    margin: -10px;
+    color: rgba(255,0,0,0.3);
+    left: 45%;
+    bottom: 33%;
+    background-image: url(../img/news.jpg); 
+    -webkit-background-clip: text; 
+    z-index: 3;
+}

@@ -34,7 +34,7 @@ Github: http://github.com/jorgechavz
   width: 60%;
   margin: 20px auto;
   align-self: flex-start;
-  border-radius: 7%;
+  border-radius: 7px;
   transition: all 0.5s ease;
 }
 .modal .modal-wrap.small{

@@ -12,7 +12,7 @@
 	top:0;
 	left:0;
 	width: 100vw;
-	max-height: 100px;
+	height: 15vh;
 	justify-content: flex-end;
 	align-items: center;
     box-shadow:0px 0px 6px 3px rgba(0,0,0,0.15);
@@ -90,7 +90,7 @@
 }
 
 .header__navbar--item, .header__navbar--item--mobile {
-  font-size: 15px;
+  font-size: 2vh;
   font-family: serif;
   position: relative;
   display: inline-block; 
@@ -102,31 +102,29 @@
   border-left-style: solid;
 }
 
-@media (max-width: 1000px) {
-.header__navbar {display: none;}
-.header__title{
-    margin: 0 auto;
-}    
-}
 @media(max-width: 1180px) and (min-width: 1000px){
 .header__navbar--item{
-    font-size: 11px;
+    font-size: 1vh;
 }
 .header__title__title{
-    font-size: 20px;
+    font-size: 2.99vh;
 }
 }
-
+@media (max-width: 1000px) {
+.header__navbar {display: none;}
+.header__title{margin: 0 auto;}
+.header__title__title{font-size: 1.5em;}
+}
 #ham-menu {
     background-color: #fff; /*メニュー背景色*/
     box-sizing: border-box;
     height: 100%;
     padding: 10px 40px; /*メニュー内左右上下余白*/
     position: fixed;
-    right: -300px; /*メニュー横幅 width と合わせる*/
+    right: -500px; /*メニュー横幅 width と合わせる*/
     top: 0;
     transition: transform 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
-    width: 300px; /*メニュー横幅*/
+    width: 500px; /*メニュー横幅*/
     z-index: 1000;
 }
 
@@ -136,14 +134,14 @@
     color: #333; /*アイコン（フォント）色*/
     cursor: pointer;
     display: block;
-    font-size: 50px; /*アイコン（フォント）サイズ*/
+    font-size: 8vh; /*アイコン（フォント）サイズ*/
     height: 50px; /*アイコン縦高さ*/
     line-height: 50px; /*縦位置中央化*/
     position: fixed;
     right: 0;
     text-align: center;
     top: 0;
-    width: 50px; /*アイコン横幅*/
+    width: 100px; /*アイコン横幅*/
     transition: all 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
     z-index: 1000;
 }
@@ -153,10 +151,10 @@
 }
 
 #menu-icon:after{
-    font-size: 10px;
+    font-size: 1vh;
     position: absolute;
     width: 100%;
-    top: 2.5em;
+    top: 4vh;
     left: 0;
     content: 'MENU';
     transition: all 500ms ease-in-out;
@@ -166,7 +164,7 @@
 
 #menu-cb:checked ~ #ham-menu,
 #menu-cb:checked ~ #menu-icon {
-    transform: translate(-300px); /*メニュー本体横幅 width と合わせる*/
+    transform: translate(-500px); /*メニュー本体横幅 width と合わせる*/
 }
 
 #menu-cb:checked ~ #menu-background {
