@@ -132,7 +132,7 @@
     color: #333; /*アイコン（フォント）色*/
     cursor: pointer;
     display: block;
-    font-size: 8vw; /*アイコン（フォント）サイズ*/
+    font-size: 10vw; /*アイコン（フォント）サイズ*/
     height: 10vh; /*アイコン縦高さ*/
     width: 100px; /*アイコン横幅*/
     line-height: 50px; /*縦位置中央化*/
@@ -150,12 +150,8 @@
     z-index: 1000;
 }
 
-#menu-cb {
-    display: none; /*チェックボックス本体は消しておく*/
-}
-
 #menu-icon:after{
-    font-size: 1vw;
+    font-size: 1.3vw;
     position: absolute;
     width: 100%;
     top: 4vw;
@@ -164,6 +160,10 @@
     transition: all 500ms ease-in-out;
     visibility: visible;
     opacity: 1;
+}
+
+#menu-cb {
+    display: none; /*チェックボックス本体は消しておく*/
 }
 
 #menu-cb:checked ~ #ham-menu,

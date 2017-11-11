@@ -1,0 +1,27 @@
+.member {
+    padding: 24px;
+    width: 40%;
+    margin: auto;
+    background: rgba(208, 207, 197, 0.6);
+    border-radius: 15px;
+}
+
+.member__info {
+    display: flex;
+}
+
+.member__info__text {
+    border-left:  solid 10px;
+    padding: 4px;
+}
+
+.member__info__face {
+    height: 150px;
+    width: 100px;
+    background: #00ff00;
+    margin: 12px;
+}
+
+.member__comment {
+    padding: 16px;
+}

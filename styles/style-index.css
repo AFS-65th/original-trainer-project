@@ -132,7 +132,7 @@ text-decoration: none;
   left: 50%;
   transform: translate(-50%, -50%);
   
-  font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック";
+  font-family: sans-serif;
   color: white;
   font-weight: 100;
   font-size: 1.5em;
@@ -154,6 +154,7 @@ body {
   background: linear-gradient(to left, rgba(69, 182, 73, .96), #FFFF00);
   height: 100vh;
 	padding-top: 30vh;
+	font-family: sans-serif;
   text-align: center;
 }
 
@@ -196,6 +197,7 @@ body {
 
 .page3__content__text {
   font-size: 2vh;
+  font-family: sans-serif;
   max-width: 700px;
   padding-top: 10px;
   padding: 10px 30px 0px 30px;
@@ -307,5 +309,20 @@ body {
 }
 
 .modal__name {
+  font-size: 5vw;
   text-align: center;
+}
+
+.modal-wrap p{
+  font-size: 4vw;
+}
+
+@media (min-width: 1000px) {
+.modal__name {
+  font-size: 4vw;
+}
+
+.modal-wrap p{
+  font-size: 3vw;
+}
 }
