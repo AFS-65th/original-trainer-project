@@ -1,0 +1,40 @@
+.member {
+    margin: auto;
+    background: rgba(208, 207, 197, 0.6);
+    border-radius: 15px;
+    width: 80vw;
+    height: 65vh;
+}
+
+.member__info {
+    display: flex;
+    padding-top: 10px;
+}
+
+.member__info__text {
+    border-left:  solid 0.3vw;
+    padding: 24px;
+}
+
+.member__info__name {
+    font-size: 4.8vw;
+    text-align: left;
+}
+
+.member__info__job {
+    font-size:2.5vw;
+    text-align: left;
+}
+
+.member__info__face {
+    height: 20%;
+    width: 18%;
+    padding: 12px;
+}
+
+.member__comment {
+    font-size: 1.4vw;
+    padding: 16px;
+    padding-top: 0px;
+    text-align: left;
+}

@@ -48,7 +48,7 @@
 }
 
 .header__title {
-    max-height: 100px;
+    max-height: 15vh;
 	margin-right: auto;
 	display: flex;
 	white-space: nowrap;
@@ -56,8 +56,9 @@
 }
 
 .header__title__logo {
-	height: 80px;
+	height: 10vw;
 	position: relative;
+	bottom: 20px;
 }
 
 .header__title__title {
@@ -65,7 +66,7 @@
     font-family: 'Russo One', sans-serif;
     color: rgb(35, 192, 227);
     position: relative;
-    bottom: 30px;
+    bottom: 8vh;
 }
 
 .header__navbar{
@@ -103,12 +104,8 @@
 }
 
 @media(max-width: 1180px) and (min-width: 1000px){
-.header__navbar--item{
-    font-size: 1vw;
-}
-.header__title__title{
-    font-size: 2vw;
-}
+.header__navbar--item{font-size: 1vw;}
+.header__title__title{font-size: 2vw;}
 }
 @media (max-width: 1000px) {
 .header__navbar {display: none;}
@@ -132,7 +129,7 @@
     color: #333; /*アイコン（フォント）色*/
     cursor: pointer;
     display: block;
-    font-size: 10vw; /*アイコン（フォント）サイズ*/
+    font-size: 10vh; /*アイコン（フォント）サイズ*/
     height: 10vh; /*アイコン縦高さ*/
     width: 100px; /*アイコン横幅*/
     line-height: 50px; /*縦位置中央化*/
@@ -144,17 +141,17 @@
     position: fixed;
     /*padding: 3vh 2vw 0 0;*/
     right: 2vw;
-    top: 5vh;
+    top: 2vh;
     
     transition: all 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
     z-index: 1000;
 }
 
 #menu-icon:after{
-    font-size: 1.3vw;
+    font-size: 1.3vh;
     position: absolute;
     width: 100%;
-    top: 4vw;
+    top: 4vh;
     left: 0;
     content: 'MENU';
     transition: all 500ms ease-in-out;
