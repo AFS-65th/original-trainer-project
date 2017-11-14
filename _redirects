@@ -1,0 +1,3 @@
+# Ridirect to custom domain
+https://afs-65th-trainer.netlify.com/* https://etproject.tk/:splat 301!
+http://afs-65th-trainer.netlify.com/* https://etproject.tk/:splat 301!

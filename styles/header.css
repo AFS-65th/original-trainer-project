@@ -56,7 +56,7 @@
 }
 
 .header__title__logo {
-	height: 10vw;
+	height: 80px;
 	position: relative;
 	bottom: 20px;
 }
@@ -110,7 +110,8 @@
 @media (max-width: 1000px) {
 .header__navbar {display: none;}
 .header__title{margin: 0 auto;}
-.header__title__title{font-size: 4.2vw;}
+.header__title__title{font-size: 4.2vw; bottom: 7vw;}
+.header__title__logo{height: 10vw;}
 }
 #ham-menu {
     background-color: #fff; /*メニュー背景色*/
@@ -138,26 +139,26 @@
     /*background-color: #fff;*/
     /*アイコン部分背景色*/
     border-radius: 10px 0 0 10px; /*左下角丸*/
-    position: fixed;
+    position: relative;
     /*padding: 3vh 2vw 0 0;*/
-    right: 2vw;
-    top: 2vh;
+    right: 5vw;
+    top: 1.5vh;
     
     transition: all 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
     z-index: 1000;
 }
 
-#menu-icon:after{
-    font-size: 1.3vh;
-    position: absolute;
-    width: 100%;
-    top: 4vh;
-    left: 0;
-    content: 'MENU';
-    transition: all 500ms ease-in-out;
-    visibility: visible;
-    opacity: 1;
-}
+/*#menu-icon:after{*/
+/*    font-size: 1.3vh;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top: 1em;*/
+/*    left: 0;*/
+/*    content: 'MENU';*/
+/*    transition: all 500ms ease-in-out;*/
+/*    visibility: visible;*/
+/*    opacity: 1;*/
+/*}*/
 
 #menu-cb {
     display: none; /*チェックボックス本体は消しておく*/
@@ -175,7 +176,5 @@
 
 
 @media (min-width: 1000px) {
-.mobile-menu {
-  display: none;
-}
+.mobile-menu {display: none;}
 }
